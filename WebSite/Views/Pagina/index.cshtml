@@ -1,0 +1,28 @@
+﻿@model WebSite.Models.PaginaModels
+
+@{
+    Layout = null;
+    ViewBag.Title = "index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <div>
+        <h4>PaginaModels</h4>
+        <hr />
+        <dl class="dl-horizontal">
+        </dl>
+    </div>
+    <p>@ViewBag.Mensagem</p>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
